@@ -173,7 +173,8 @@ int main () 																						//função responsável por mostar o menu
 		printf("Escolha a opção desejada do menu:\n\n");
 		printf ("\t1 - Registrar Nomes\n"); 														//opções do menu
 		printf ("\t2 - Consultar Nomes\n"); 														//opções do menu
-		printf ("\t3 - Deletar Nomes\n\n"); 														//opções do menu
+		printf ("\t3 - Deletar Nomes\n"); 
+		printf("\t4 - Sair do Sistema\n\n");														//opções do menu
 		printf("Escolha a opção: ");																//fim do menu
 	
 		scanf("%d", &opcao);
@@ -192,6 +193,36 @@ int main () 																						//função responsável por mostar o menu
 			
 			case 3: 																				// caso o usuário digite 1, irá realizar a função int deletar
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n\n");
+			printf(
+          		"______*#######* \n"
+         		 "____*##########* \n"
+          		"__*############## \n"
+          		"__################ \n"
+         		 "_##################_________*####* \n"
+         		 "__##################_____*########## \n"
+         		 "__##################___*############# \n"
+         		 "___#################*_###############* \n"
+         		 "____#################################* \n"
+         		 "______############################### \n"
+         		 "_______############################# \n"
+         		 "________=########################## \n"
+        		  "__________######################## \n"
+        		  "___________*##################### \n"
+        		  "____________*################## \n"
+        		  "_____________*############### \n"
+        		  "_______________############# \n"
+        		  "________________########## \n"
+        		  "________________=#######* \n"
+        		  "_________________###### \n"
+        		  "__________________#### \n"
+        		  "__________________### \n"
+        		  "___________________# \n"
+				);
+			return 0;
 			break;
 		
 			default: 																				// caso ele digite qualquer outra coisa irá exibir mensagem de "erro"
